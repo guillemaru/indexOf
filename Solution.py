@@ -10,7 +10,7 @@ class Solution:
                         if nl==1:
                             return x
                         else:
-                            #empieza el check
+                            #check starts
                             check=True
                             for y in range(nl-1):
                             	check = (needle[y+1]==haystack[x+1])
@@ -24,10 +24,10 @@ def main():
 	haystack = "hello"
 	needle = "ll"
 	solution = Solution()
-	print(solution.strStr(haystack, needle))
-  haystack = "aaalaaallaaaa"
-  print(solution.strStr(haystack, needle))
-  haystack = "aaaaaaaa"
-  print(solution.strStr(haystack, needle))
+	print("haystack is " + haystack + "; needle is " + needle + "solution is " + solution.strStr(haystack, needle))
+  	haystack = "aaalaaallaaaa"
+  	print("haystack is " + haystack + "; needle is " + needle + "solution is " + solution.strStr(haystack, needle))
+  	haystack = "aaaaaaaa"
+  	print("haystack is " + haystack + "; needle is " + needle + "solution is " + solution.strStr(haystack, needle))
 if __name__ == '__main__':
     	main()
